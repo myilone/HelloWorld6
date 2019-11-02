@@ -13,10 +13,11 @@ steps:
     sdk: 'iphoneos'
     configuration: 'Release'
     xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
-    exportPath: '$(agent.buildDirectory)/output/iphoneos/Release'
+    #exportPath: '$(agent.buildDirectory)/output/iphoneos/Release'
+
 - task: CopyFiles@2
   inputs:
-    contents: '**/*.apk'
+    contents: '**/*.ipa'
     targetFolder: '$(build.artifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
