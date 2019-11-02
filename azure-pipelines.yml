@@ -20,7 +20,7 @@ steps:
     targetFolder: '$(build.artifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
-    inputs:
-      pathToPublish: '$(build.artifactStagingDirectory)'
-      artifactName: 'outputs'
-      artifactType: 'container'
+  inputs:
+    pathToPublish: '$(build.artifactStagingDirectory)'
+    artifactName: 'outputs'
+    artifactType: 'container'
