@@ -13,7 +13,7 @@ steps:
     sdk: 'iphoneos'
     configuration: 'Release'
     xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
-    #exportPath: '$(agent.buildDirectory)/output/iphoneos/Release'
+    archivePath: '$(build.artifactStagingDirectory)'
 
 - task: CopyFiles@2
   inputs:
